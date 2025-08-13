@@ -3,114 +3,96 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>AfriGlam Clothing Store</title>
 		<meta
 			name="description"
-			content="A simple, well-structured HTML5 clothing store web page featuring
-                    product listings, tables, media, and an accessible, fully validated
-                    order form."
+			content="StyleHaven – Your Wardrobe’s Happy Place. Explore our stylish clothing collections, product details, and enjoy a smooth online shopping experience."
 		/>
-		
+		<title>StyleHaven – Your Wardrobe’s Happy Place</title>
 		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
 		<header>
-			<h1>AfriGlam Clothing Store</h1>
-			<p>Celebrating African culture & style</p>
+			<h1>StyleHaven</h1>
+			<p class="tagline">Your Wardrobe’s Happy Place</p>
 		</header>
 
-		<nav>
+		<section>
+			<h2>Our Collections</h2>
 			<ul>
-				<li><a href="#categories">Categories</a></li>
-				<li><a href="#bestsellers">Bestsellers</a></li>
-				<li><a href="#media">Gallery</a></li>
-				<li><a href="#order-form">Order Form</a></li>
-			</ul>
-		</nav>
-
-		<section id="categories">
-			<h2>Our Clothing Categories</h2>
-			<ul>
-				<li>
-					Men's Wear
-					<ul>
-						<li>Traditional Kaftans</li>
-						<li>Casual Shirts</li>
-						<li>Corporate Suits</li>
-					</ul>
-				</li>
-				<li>
-					Women's Wear
-					<ul>
-						<li>Ankara Dresses</li>
-						<li>Head Wraps</li>
-						<li>Casual Tops</li>
-					</ul>
-				</li>
-				<li>
-					Accessories
-					<ul>
-						<li>Handmade Bags</li>
-						<li>Beaded Jewelry</li>
-						<li>Leather Sandals</li>
-					</ul>
-				</li>
+				<li>Men's Wear</li>
+				<li>Women's Wear</li>
+				<li>Kids' Fashion</li>
+				<li>Accessories</li>
 			</ul>
 		</section>
 
-		<section id="bestsellers">
-			<h2>Bestselling Products</h2>
+		<section>
+			<h2>Size Chart</h2>
 			<table>
 				<thead>
 					<tr>
-						<th>Item</th>
-						<th>Category</th>
-						<th>Price (₦)</th>
-						<th>In Stock</th>
+						<th>Size</th>
+						<th>Bust (inches)</th>
+						<th>Waist (inches)</th>
+						<th>Hips (inches)</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td data-label="Item">Ankara Maxi Dress</td>
-						<td data-label="Category">Women's Wear</td>
-						<td data-label="Price (₦)">15,000</td>
-						<td data-label="In Stock">Yes</td>
+						<td>S</td>
+						<td>34</td>
+						<td>26</td>
+						<td>36</td>
 					</tr>
 					<tr>
-						<td data-label="Item">Men's Kaftan Set</td>
-						<td data-label="Category">Men's Wear</td>
-						<td data-label="Price (₦)">18,500</td>
-						<td data-label="In Stock">No</td>
+						<td>M</td>
+						<td>36</td>
+						<td>28</td>
+						<td>38</td>
 					</tr>
 					<tr>
-						<td data-label="Item">Beaded Necklace</td>
-						<td data-label="Category">Accessories</td>
-						<td data-label="Price (₦)">5,000</td>
-						<td data-label="In Stock">Yes</td>
+						<td>L</td>
+						<td>38</td>
+						<td>30</td>
+						<td>40</td>
+					</tr>
+					<tr>
+						<td>XL</td>
+						<td>40</td>
+						<td>32</td>
+						<td>42</td>
 					</tr>
 				</tbody>
 			</table>
 		</section>
 
-		<section id="media">
-			<h2>Store Gallery</h2>
+		<section>
+			<h2>Store Highlights</h2>
 			<img
-				src="https://via.placeholder.com/800x400?text=AfriGlam+Store"
-				alt="AfriGlam store showcase"
+				src="https://images.pexels.com/photos/4940756/pexels-photo-4940756.jpeg"
+				alt="StyleHaven store interior"
+				width="400"
 			/>
 			<p>
-				Explore our vibrant collection of African-inspired fashion in our
-				beautifully designed store.
+				At StyleHaven, we bring you a carefully curated collection of stylish
+				outfits that fit your personality and comfort. Whether you're dressing
+				up for work or relaxing on the weekend, we've got you covered.
 			</p>
 		</section>
 
-		<section id="order-form">
-			<h2>Place Your Order</h2>
-			<form action="#" method="post">
+		<section>
+			<h2>Order Form</h2>
+			<form action="/submit" method="post">
 				<fieldset>
 					<legend>Personal Information</legend>
-					<label for="name">Full Name:</label>
-					<input type="text" id="name" name="name" required minlength="3" />
+					<label for="fullname">Full Name:</label>
+					<input
+						type="text"
+						id="fullname"
+						name="fullname"
+						required
+						minlength="3"
+					/>
 
 					<label for="email">Email Address:</label>
 					<input type="email" id="email" name="email" required />
@@ -120,59 +102,62 @@
 						type="tel"
 						id="phone"
 						name="phone"
-						pattern="[0-9]{11}"
-						placeholder="08012345678"
+						pattern="[0-9]{10}"
 						required
+						placeholder="e.g. 0801234567"
 					/>
 				</fieldset>
 
 				<fieldset>
 					<legend>Order Details</legend>
-					<label for="product">Select Product:</label>
-					<select id="product" name="product" required>
-						<option value="">--Select an item--</option>
-						<option value="ankara">Ankara Maxi Dress</option>
-						<option value="kaftan">Men's Kaftan Set</option>
-						<option value="necklace">Beaded Necklace</option>
+					<label for="item">Select Item:</label>
+					<select id="item" name="item" required>
+						<option value="">--Choose an item--</option>
+						<option value="jacket">Classic Denim Jacket</option>
+						<option value="dress">Floral Summer Dress</option>
+						<option value="hoodie">Kids' Cartoon Hoodie</option>
 					</select>
 
 					<label for="quantity">Quantity:</label>
-					<input
-						type="number"
-						id="quantity"
-						name="quantity"
-						min="1"
-						max="10"
-						required
-					/>
+					<input type="number" id="quantity" name="quantity" min="1" required />
 
-					<label for="delivery-date">Preferred Delivery Date:</label>
-					<input type="date" id="delivery-date" name="delivery-date" required />
+					<div class="color-picker">
+						<label for="color">Choose Your Preferred Color:</label>
+						<input type="color" id="color" name="color" value="#8e44ad" />
+					</div>
 				</fieldset>
 
 				<fieldset>
-					<legend>Delivery Information</legend>
-					<label for="address">Delivery Address:</label>
-					<textarea
-						id="address"
-						name="address"
-						rows="3"
+					<legend>Payment Information</legend>
+					<label for="cardnumber">Card Number:</label>
+					<input
+						type="text"
+						id="cardnumber"
+						name="cardnumber"
+						pattern="[0-9]{16}"
 						required
-						minlength="10"
-					></textarea>
+						placeholder="16-digit number"
+					/>
 
-					<label>
-						<input type="checkbox" name="terms" required /> I agree to the terms
-						and conditions
-					</label>
+					<label for="expdate">Expiry Date:</label>
+					<input type="month" id="expdate" name="expdate" required />
+
+					<label for="cvv">CVV:</label>
+					<input
+						type="password"
+						id="cvv"
+						name="cvv"
+						pattern="[0-9]{3}"
+						required
+					/>
 				</fieldset>
 
-				<button type="submit">Submit Order</button>
+				<input type="submit" value="Place Order" />
 			</form>
 		</section>
 
 		<footer>
-			<p>&copy; 2025 AfriGlam Clothing Store | Designed with ❤️</p>
+			<p>&copy; 2025 StyleHaven. All rights reserved.</p>
 		</footer>
 	</body>
 </html>
