@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AfriGlam Clothing Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>AfriGlam Clothing Store</h1>
+    <p>Celebrating African culture & style</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#bestsellers">Bestsellers</a></li>
+        <li><a href="#media">Gallery</a></li>
+        <li><a href="#order-form">Order Form</a></li>
+    </ul>
+</nav>
+
+<section id="categories">
+    <h2>Our Clothing Categories</h2>
+    <ul>
+        <li>Men's Wear
+            <ul>
+                <li>Traditional Kaftans</li>
+                <li>Casual Shirts</li>
+                <li>Corporate Suits</li>
+            </ul>
+        </li>
+        <li>Women's Wear
+            <ul>
+                <li>Ankara Dresses</li>
+                <li>Head Wraps</li>
+                <li>Casual Tops</li>
+            </ul>
+        </li>
+        <li>Accessories
+            <ul>
+                <li>Handmade Bags</li>
+                <li>Beaded Jewelry</li>
+                <li>Leather Sandals</li>
+            </ul>
+        </li>
+    </ul>
+</section>
+
+<section id="bestsellers">
+    <h2>Bestselling Products</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Category</th>
+                <th>Price (₦)</th>
+                <th>In Stock</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ankara Maxi Dress</td>
+                <td>Women's Wear</td>
+                <td>15,000</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Men's Kaftan Set</td>
+                <td>Men's Wear</td>
+                <td>18,500</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Beaded Necklace</td>
+                <td>Accessories</td>
+                <td>5,000</td>
+                <td>Yes</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section id="media">
+    <h2>Store Gallery</h2>
+    <img src="https://via.placeholder.com/800x400?text=AfriGlam+Store" alt="AfriGlam store showcase">
+    <p>Explore our vibrant collection of African-inspired fashion in our beautifully designed store.</p>
+</section>
+
+<section id="order-form">
+    <h2>Place Your Order</h2>
+    <form action="#" method="post">
+        
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required minlength="3">
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" placeholder="08012345678" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Order Details</legend>
+            <label for="product">Select Product:</label>
+            <select id="product" name="product" required>
+                <option value="">--Select an item--</option>
+                <option value="ankara">Ankara Maxi Dress</option>
+                <option value="kaftan">Men's Kaftan Set</option>
+                <option value="necklace">Beaded Necklace</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+
+            <label for="delivery-date">Preferred Delivery Date:</label>
+            <input type="date" id="delivery-date" name="delivery-date" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Delivery Information</legend>
+            <label for="address">Delivery Address:</label>
+            <textarea id="address" name="address" rows="3" required minlength="10"></textarea>
+
+            <label>
+                <input type="checkbox" name="terms" required> I agree to the terms and conditions
+            </label>
+        </fieldset>
+
+        <button type="submit">Submit Order</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 AfriGlam Clothing Store | Designed with ❤️</p>
+</footer>
+
+</body>
+</html>
