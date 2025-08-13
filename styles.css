@@ -1,0 +1,141 @@
+/* General Reset and Typography */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #fdfaf6;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+/* Header */
+header {
+    background-color: #ff6f3c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header p {
+    margin-top: 5px;
+}
+
+/* Navigation */
+nav {
+    background-color: #ff6f3c;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
+section {
+    padding: 20px;
+    margin: auto;
+    max-width: 1000px;
+}
+
+/* Lists */
+ul {
+    padding-left: 20px;
+}
+
+/* Table - Default (Desktop) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #ff6f3c;
+    color: white;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Forms */
+form {
+    background-color: #fff4ee;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+legend {
+    font-weight: bold;
+    color: #ff6f3c;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+}
+
+input, select, textarea, button {
+    padding: 8px;
+    width: 100%;
+    margin-top: 3px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Buttons */
+button {
+    background-color: #ff6f3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #e65a25;
+}
+
+/* Footer */
+footer {
+    background-color: #ff6f3c;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
